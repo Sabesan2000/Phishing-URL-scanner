@@ -211,39 +211,3 @@ phishing-scanner/
 └── blocks/                 # Blocked domains list (created automatically)
 \`\`\`
 
-## Troubleshooting
-
-### Common Issues
-
-**"Required environment variable 'VIRUSTOTAL_API_KEY' not set"**
-- Solution: Set the `VIRUSTOTAL_API_KEY` environment variable
-
-**"Rate limit exceeded"**
-- Solution: Wait 60 seconds between requests (free tier limitation)
-- Consider upgrading to VirusTotal premium for higher limits
-
-**"Insufficient permissions to modify hosts file"**
-- Solution: Run with elevated privileges (sudo on Linux/Mac, Administrator on Windows)
-- Or use the default logging-based blocking mechanism
-
-**"Network error" or timeout**
-- Solution: Check internet connectivity and firewall settings
-- Verify VirusTotal API is accessible from your network
-
-## Future Enhancements
-
-- [ ] Asynchronous scanning for multiple URLs
-- [ ] Slack/Teams webhook notifications
-- [ ] Screenshot capability for phishing pages
-- [ ] Integration with additional threat intelligence APIs (AbuseIPDB, URLScan.io)
-- [ ] Historical analysis tracking and trending
-- [ ] Web dashboard for scan management
-- [ ] Quarantine functionality for suspicious domains
-
-## License
-
-This tool is provided for security research and incident response purposes. Use responsibly and in accordance with applicable laws and regulations.
-
-## Support
-
-For issues, questions, or contributions, please refer to the project documentation or contact your security team.
